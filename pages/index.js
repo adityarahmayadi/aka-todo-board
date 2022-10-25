@@ -1,7 +1,6 @@
 import { useCallback, useState } from 'react'
 import { Board } from '../components/board'
 import { Card } from '../components/card'
-import { Empty } from '../components/empty'
 import { Header } from '../components/header'
 import { data } from '../data'
 
