@@ -1,7 +1,18 @@
+import { Board } from "../components/board"
+import { Header } from "../components/header"
+
 export default function Home() {
   return (
-    <div className="w-screen h-screen mx-auto flex items-center justify-center">
-      <h1 className="text-2xl">Simple Todo Board</h1>
-    </div>
+    <>
+      <Header />
+      <div className="container px-4 py-8 mx-auto">
+        <div className="flex row gap-8">
+          <Board title="Todo" />
+          <Board title="In Progress" />
+          <Board title="In Review" />
+          <Board title="Done" />
+        </div>
+      </div>
+    </>
   )
 }
